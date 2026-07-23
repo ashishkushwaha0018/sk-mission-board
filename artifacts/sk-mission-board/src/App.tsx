@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import type { ReactNode } from 'react';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
@@ -13,9 +13,7 @@ import { Notes } from '@/pages/Notes';
 import { Videos } from '@/pages/Videos';
 import { About } from '@/pages/About';
 
-const queryClient = new QueryClient();
-
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-background">
       <Navbar />
@@ -43,14 +41,12 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
-          <Router />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+        <Router />
+      </WouterRouter>
+      <Toaster />
+    </TooltipProvider>
   );
 }
 
