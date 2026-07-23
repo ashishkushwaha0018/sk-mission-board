@@ -1,0 +1,125 @@
+[
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "icon": "📐",
+    "description": "Algebra, Geometry, Trigonometry & more",
+    "color": "from-blue-600 to-blue-800",
+    "chapters": [
+      { "id": 1, "title": "Real Numbers", "pdfUrl": "#", "description": "Chapter 1 - Real Numbers" },
+      { "id": 2, "title": "Polynomials", "pdfUrl": "#", "description": "Chapter 2 - Polynomials" },
+      { "id": 3, "title": "Pair of Linear Equations", "pdfUrl": "#", "description": "Chapter 3 - Pair of Linear Equations in Two Variables" },
+      { "id": 4, "title": "Quadratic Equations", "pdfUrl": "#", "description": "Chapter 4 - Quadratic Equations" },
+      { "id": 5, "title": "Arithmetic Progressions", "pdfUrl": "#", "description": "Chapter 5 - Arithmetic Progressions" },
+      { "id": 6, "title": "Triangles", "pdfUrl": "#", "description": "Chapter 6 - Triangles" },
+      { "id": 7, "title": "Coordinate Geometry", "pdfUrl": "#", "description": "Chapter 7 - Coordinate Geometry" },
+      { "id": 8, "title": "Introduction to Trigonometry", "pdfUrl": "#", "description": "Chapter 8 - Introduction to Trigonometry" },
+      { "id": 9, "title": "Applications of Trigonometry", "pdfUrl": "#", "description": "Chapter 9 - Some Applications of Trigonometry" },
+      { "id": 10, "title": "Circles", "pdfUrl": "#", "description": "Chapter 10 - Circles" },
+      { "id": 11, "title": "Areas Related to Circles", "pdfUrl": "#", "description": "Chapter 11 - Areas Related to Circles" },
+      { "id": 12, "title": "Surface Areas and Volumes", "pdfUrl": "#", "description": "Chapter 12 - Surface Areas and Volumes" },
+      { "id": 13, "title": "Statistics", "pdfUrl": "#", "description": "Chapter 13 - Statistics" },
+      { "id": 14, "title": "Probability", "pdfUrl": "#", "description": "Chapter 14 - Probability" }
+    ]
+  },
+  {
+    "id": "science",
+    "name": "Science",
+    "icon": "🔬",
+    "description": "Physics, Chemistry & Biology",
+    "color": "from-green-600 to-emerald-800",
+    "chapters": [
+      { "id": 1, "title": "Chemical Reactions and Equations", "pdfUrl": "#", "description": "Chapter 1 - Chemical Reactions and Equations" },
+      { "id": 2, "title": "Acids, Bases and Salts", "pdfUrl": "#", "description": "Chapter 2 - Acids, Bases and Salts" },
+      { "id": 3, "title": "Metals and Non-Metals", "pdfUrl": "#", "description": "Chapter 3 - Metals and Non-Metals" },
+      { "id": 4, "title": "Carbon and its Compounds", "pdfUrl": "#", "description": "Chapter 4 - Carbon and its Compounds" },
+      { "id": 5, "title": "Life Processes", "pdfUrl": "#", "description": "Chapter 5 - Life Processes" },
+      { "id": 6, "title": "Control and Coordination", "pdfUrl": "#", "description": "Chapter 6 - Control and Coordination" },
+      { "id": 7, "title": "How do Organisms Reproduce?", "pdfUrl": "#", "description": "Chapter 7 - How do Organisms Reproduce?" },
+      { "id": 8, "title": "Heredity", "pdfUrl": "#", "description": "Chapter 8 - Heredity" },
+      { "id": 9, "title": "Light - Reflection and Refraction", "pdfUrl": "#", "description": "Chapter 9 - Light - Reflection and Refraction" },
+      { "id": 10, "title": "Human Eye and Colourful World", "pdfUrl": "#", "description": "Chapter 10 - The Human Eye and the Colourful World" },
+      { "id": 11, "title": "Electricity", "pdfUrl": "#", "description": "Chapter 11 - Electricity" },
+      { "id": 12, "title": "Magnetic Effects of Electric Current", "pdfUrl": "#", "description": "Chapter 12 - Magnetic Effects of Electric Current" },
+      { "id": 13, "title": "Our Environment", "pdfUrl": "#", "description": "Chapter 13 - Our Environment" }
+    ]
+  },
+  {
+    "id": "social-science",
+    "name": "Social Science",
+    "icon": "🌍",
+    "description": "History, Geography, Civics & Economics",
+    "color": "from-orange-600 to-amber-800",
+    "chapters": [
+      { "id": 1, "title": "The Rise of Nationalism in Europe", "pdfUrl": "#", "description": "History Chapter 1" },
+      { "id": 2, "title": "Nationalism in India", "pdfUrl": "#", "description": "History Chapter 2" },
+      { "id": 3, "title": "The Making of a Global World", "pdfUrl": "#", "description": "History Chapter 3" },
+      { "id": 4, "title": "The Age of Industrialisation", "pdfUrl": "#", "description": "History Chapter 4" },
+      { "id": 5, "title": "Resources and Development", "pdfUrl": "#", "description": "Geography Chapter 1" },
+      { "id": 6, "title": "Forest and Wildlife Resources", "pdfUrl": "#", "description": "Geography Chapter 2" },
+      { "id": 7, "title": "Water Resources", "pdfUrl": "#", "description": "Geography Chapter 3" },
+      { "id": 8, "title": "Agriculture", "pdfUrl": "#", "description": "Geography Chapter 4" },
+      { "id": 9, "title": "Power Sharing", "pdfUrl": "#", "description": "Civics Chapter 1" },
+      { "id": 10, "title": "Federalism", "pdfUrl": "#", "description": "Civics Chapter 2" },
+      { "id": 11, "title": "Development", "pdfUrl": "#", "description": "Economics Chapter 1" },
+      { "id": 12, "title": "Sectors of the Indian Economy", "pdfUrl": "#", "description": "Economics Chapter 2" }
+    ]
+  },
+  {
+    "id": "hindi",
+    "name": "Hindi",
+    "icon": "📖",
+    "description": "Kshitij, Kritika & Vyakaran",
+    "color": "from-red-600 to-rose-800",
+    "chapters": [
+      { "id": 1, "title": "Surdas - Pad", "pdfUrl": "#", "description": "Kshitij - Chapter 1" },
+      { "id": 2, "title": "Tulsidas - Ram-Lakshman-Parshuram Samvad", "pdfUrl": "#", "description": "Kshitij - Chapter 2" },
+      { "id": 3, "title": "Dev - Savaiyye", "pdfUrl": "#", "description": "Kshitij - Chapter 3" },
+      { "id": 4, "title": "Jayashankar Prasad - Atmaparichay", "pdfUrl": "#", "description": "Kshitij - Chapter 4" },
+      { "id": 5, "title": "Harivanshrai Bachchan - Madhushala", "pdfUrl": "#", "description": "Kshitij - Chapter 5" },
+      { "id": 6, "title": "Balgobin Bhagat", "pdfUrl": "#", "description": "Kshitij - Prose Chapter 1" },
+      { "id": 7, "title": "Lakhnawi Andaaz", "pdfUrl": "#", "description": "Kshitij - Prose Chapter 2" },
+      { "id": 8, "title": "Maata ka Aanchal", "pdfUrl": "#", "description": "Kritika - Chapter 1" },
+      { "id": 9, "title": "George Pancham ki Naak", "pdfUrl": "#", "description": "Kritika - Chapter 2" },
+      { "id": 10, "title": "Saana-Saana Hath Jodi", "pdfUrl": "#", "description": "Kritika - Chapter 3" }
+    ]
+  },
+  {
+    "id": "english",
+    "name": "English",
+    "icon": "🇬🇧",
+    "description": "First Flight, Footprints & Grammar",
+    "color": "from-indigo-600 to-violet-800",
+    "chapters": [
+      { "id": 1, "title": "A Letter to God", "pdfUrl": "#", "description": "First Flight - Chapter 1" },
+      { "id": 2, "title": "Nelson Mandela: Long Walk to Freedom", "pdfUrl": "#", "description": "First Flight - Chapter 2" },
+      { "id": 3, "title": "Two Stories about Flying", "pdfUrl": "#", "description": "First Flight - Chapter 3" },
+      { "id": 4, "title": "From the Diary of Anne Frank", "pdfUrl": "#", "description": "First Flight - Chapter 4" },
+      { "id": 5, "title": "The Hundred Dresses-I", "pdfUrl": "#", "description": "First Flight - Chapter 5" },
+      { "id": 6, "title": "The Hundred Dresses-II", "pdfUrl": "#", "description": "First Flight - Chapter 6" },
+      { "id": 7, "title": "Glimpses of India", "pdfUrl": "#", "description": "First Flight - Chapter 7" },
+      { "id": 8, "title": "Mijbil the Otter", "pdfUrl": "#", "description": "First Flight - Chapter 8" },
+      { "id": 9, "title": "A Triumph of Surgery", "pdfUrl": "#", "description": "Footprints Without Feet - Chapter 1" },
+      { "id": 10, "title": "The Thief's Story", "pdfUrl": "#", "description": "Footprints Without Feet - Chapter 2" },
+      { "id": 11, "title": "The Midnight Visitor", "pdfUrl": "#", "description": "Footprints Without Feet - Chapter 3" },
+      { "id": 12, "title": "A Question of Trust", "pdfUrl": "#", "description": "Footprints Without Feet - Chapter 4" }
+    ]
+  },
+  {
+    "id": "sanskrit",
+    "name": "Sanskrit",
+    "icon": "🕉️",
+    "description": "Shemushi, Vyakaranavithi & Translation",
+    "color": "from-yellow-600 to-amber-700",
+    "chapters": [
+      { "id": 1, "title": "Shuchiparyaavaranam", "pdfUrl": "#", "description": "Shemushi - Chapter 1" },
+      { "id": 2, "title": "Buddhi Balam Tato Balam", "pdfUrl": "#", "description": "Shemushi - Chapter 2" },
+      { "id": 3, "title": "Vyaayaamah Sarvada Pathyah", "pdfUrl": "#", "description": "Shemushi - Chapter 3" },
+      { "id": 4, "title": "Shareer Saushtavam", "pdfUrl": "#", "description": "Shemushi - Chapter 4" },
+      { "id": 5, "title": "Jeevanam Mayi", "pdfUrl": "#", "description": "Shemushi - Chapter 5" },
+      { "id": 6, "title": "Suktimouktikam", "pdfUrl": "#", "description": "Shemushi - Chapter 6" },
+      { "id": 7, "title": "Sandhi Prakaranam", "pdfUrl": "#", "description": "Vyakaranavithi - Chapter 1" },
+      { "id": 8, "title": "Shabd Roop", "pdfUrl": "#", "description": "Vyakaranavithi - Chapter 2" }
+    ]
+  }
+]
