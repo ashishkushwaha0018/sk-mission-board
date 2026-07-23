@@ -1,4 +1,4 @@
-import { Link, useRoute } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -8,26 +8,15 @@ const links = [
   { href: "/notes", label: "Notes" },
   { href: "/videos", label: "Videos" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [homeActive] = useRoute("/");
-  const [notesActive] = useRoute("/notes");
-  const [videosActive] = useRoute("/videos");
-  const [aboutActive] = useRoute("/about");
-  const [contactActive] = useRoute("/contact");
+  const [location] = useLocation();
 
-  const checkActive = (path: string) => {
-    switch (path) {
-      case "/": return homeActive;
-      case "/notes": return notesActive;
-      case "/videos": return videosActive;
-      case "/about": return aboutActive;
-      case "/contact": return contactActive;
-      default: return false;
-    }
+  const isActive = (href: string) => {
+    if (href === "/") return location === "/";
+    return location.startsWith(href);
   };
 
   return (
@@ -41,28 +30,27 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => {
-            const isActive = checkActive(link.href);
-            return (
-              <Link 
-                key={link.href} 
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-purple-400",
-                  isActive ? "text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]" : "text-muted-foreground"
-                )}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-purple-400",
+                isActive(link.href)
+                  ? "text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]"
+                  : "text-muted-foreground"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
         {/* Mobile Nav Toggle */}
-        <button 
+        <button
           className="md:hidden text-foreground hover:text-purple-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
-          data-testid="button-mobile-menu"
+          aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -72,22 +60,21 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden border-t border-white/10 bg-background/95 backdrop-blur-xl absolute top-16 left-0 w-full">
           <div className="flex flex-col py-4 px-4 gap-4">
-            {links.map((link) => {
-              const isActive = checkActive(link.href);
-              return (
-                <Link 
-                  key={link.href} 
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "text-lg font-medium px-4 py-2 rounded-md transition-colors",
-                    isActive ? "bg-purple-500/10 text-purple-400" : "text-muted-foreground hover:text-purple-400 hover:bg-white/5"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className={cn(
+                  "text-lg font-medium px-4 py-2 rounded-md transition-colors",
+                  isActive(link.href)
+                    ? "bg-purple-500/10 text-purple-400"
+                    : "text-muted-foreground hover:text-purple-400 hover:bg-white/5"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       )}
