@@ -1,6 +1,13 @@
 import { Link } from "wouter";
 import { BookOpen, Video, Trophy, Target, ArrowRight } from "lucide-react";
 import subjectsData from "@/data/subjects.json";
+import chaptersData from "@/data/chapters.json";
+
+// Compute chapter count per subject from the flat chapters file
+const chapterCounts: Record<string, number> = {};
+for (const ch of chaptersData) {
+  chapterCounts[ch.subjectId] = (chapterCounts[ch.subjectId] ?? 0) + 1;
+}
 
 export function Home() {
   return (
@@ -98,7 +105,7 @@ export function Home() {
             {subjectsData.map((subject) => (
               <Link 
                 key={subject.id} 
-                href={`/notes`}
+                href="/notes"
                 className="group relative p-[1px] rounded-2xl overflow-hidden cursor-pointer"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${subject.color} opacity-50 group-hover:opacity-100 transition-opacity duration-500`} />
@@ -108,7 +115,7 @@ export function Home() {
                   <p className="text-muted-foreground text-sm mb-6">{subject.description}</p>
                   
                   <div className="mt-auto inline-flex items-center text-sm font-medium text-purple-400">
-                    {subject.chapters.length} Chapters <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                    {chapterCounts[subject.id] ?? 0} Chapters <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </Link>
