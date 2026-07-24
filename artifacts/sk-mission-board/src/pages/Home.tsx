@@ -21,7 +21,7 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-sm mb-8 animate-fade-in-up">
             <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse" />
-            Session 2024-25 Ready
+            Session 2026-27 Ready
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight animate-fade-in-up delay-100">
